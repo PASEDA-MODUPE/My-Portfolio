@@ -7,17 +7,14 @@ function Technologies() {
     css,
     js,
     react,
-    tailwind,
     vscode,
     git,
     github,
-    npm,
     figma,
-    
-    
   } = techStackDetails;
+
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 ">
+    <main className="container mx-auto max-width pt-10 pb-20">
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tech Stack
@@ -26,27 +23,22 @@ function Technologies() {
           Technologies I've been working with recently
         </p>
       </section>
-      <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6">
-        <img src={html} title="html" alt="" />
-        <img src={css} title="CSS" alt="" />
-        <img src={js} title="JavaScript" alt="" />
-        <img src={react} title="React" alt="" />
-        <img src={tailwind} title="Tailwind CSS" alt="" />
-     
+      <section className="flex flex-wrap gap-12 justify-center pt-6"> {/* Increased gap here */}
+        <img src={html} title="HTML" alt="HTML" className="w-16 h-16 md:w-20 md:h-20 mx-4" /> {/* Added mx-4 for margin */}
+        <img src={css} title="CSS" alt="CSS" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
+        <img src={js} title="JavaScript" alt="JavaScript" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
+        <img src={react} title="React" alt="React" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
       </section>
       <section>
         <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tools
         </h1>
       </section>
-      <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6">
-        <img src={vscode} title="Visual Studio Code" alt="" />
-        <img src={git} title="Git" alt="Git" />
-        <img src={github} title="Github" alt="Github" />
-        
-        <img src={npm} title="NPM" alt="NPM" />
-        <img src={figma} title="Figma" alt="" />
-        
+      <section className="flex flex-wrap gap-12 justify-center pt-6"> {/* Increased gap here */}
+        <img src={vscode} title="Visual Studio Code" alt="VSCode" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
+        <img src={git} title="Git" alt="Git" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
+        <img src={github} title="Github" alt="Github" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
+        <img src={figma} title="Figma" alt="Figma" className="w-16 h-16 md:w-20 md:h-20 mx-4" />
       </section>
     </main>
   );

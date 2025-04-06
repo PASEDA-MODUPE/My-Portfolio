@@ -23,8 +23,8 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Modupe paseda ",
-  tagline: " i'm a web developer",
+  name: "Modupe Paseda ",
+  tagline: " Frontend Developer",
   img: profile,
   about: `"Aspiring web developer on a journey to learn and grow in the world of coding and design. Eager to showcase my first steps in front-end development, utilizing HTML, CSS, and JavaScript to bring ideas to life. Excited to be part of this dynamic field and keen to collaborate on new projects. Browse my portfolio to witness my progress and witness the passion I bring to each endeavor."`,
 };
@@ -131,7 +131,5 @@ project lorem ipsum generator for dummy content`,
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "pasedasunday@gmail.com",
-  phone: "07013213898",
- 
+  email: "pasedasunday@gmail.com"
 };

@@ -10,11 +10,10 @@ function Header() {
   };
 
   return (
-    <header className="container mx-auto md:flex justify-between py-2 max-width">
+    <header className="container mx-auto py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-        {/* <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
-        </NavLink> */}
+        {/* Uncomment and style logo if needed */}
+        {/* <NavLink to="/"><img className="w-14" src={logos.logogradient} alt="logo" /></NavLink> */}
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
             className="stroke-dark-heading dark:stroke-black md:hidden"
@@ -33,7 +32,7 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
+      <nav className={` ${!isOpen ? "hidden" : null} md:flex justify-center items-center`}>
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
             <NavLink to="/" onClick={toggleClass}>
@@ -55,13 +54,13 @@ function Header() {
               Projects
             </NavLink>
           </li>
-          <li>
+          <li className="pb-1 md:pb-0">
             <NavLink to="/contact" onClick={toggleClass}>
               Contact
             </NavLink>
           </li>
         </ul>
-        <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
+        <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:ml-10">
           <li>
             <a href={twitter} target="_blank" rel="noreferrer noopener">
               <svg

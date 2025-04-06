@@ -11,16 +11,21 @@ function App() {
   return (
     <Router>
       <Header />
+      
+      {/* Added Hello, World! and Modupe */}
+      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/technologies" element={<Technologies />} />
-        
       </Routes>
+      
       <Footer />
     </Router>
   );
 }
+
 export default App;
