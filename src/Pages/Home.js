@@ -47,12 +47,12 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-w-screen-xl section md:flex justify-between items-center mx-5">
+    <main className="container mx-auto max-w-screen-xl section md:flex justify-between items-center mx-5 px-6 md:px-12">
       {/* Left Section: Text Content */}
-      <div className="md:order-first">
+      <div className="md:order-first mb-8 md:mb-0">
         <h1
           ref={heading1Ref}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-3xl text-dark-heading dark:text-light-heading md:text-5xl xl:text-6xl xl:leading-tight font-semibold font-poppins tracking-wide mb-4"
         >
           Hi,👋<br />
           My name is
@@ -60,14 +60,14 @@ function Home() {
 
         <h1
           ref={heading2Ref}
-          className="text-2xl text-black md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-4xl text-black md:text-5xl xl:text-6xl xl:leading-tight font-bold font-poppins mb-4"
         >
           {name}
         </h1>
 
         <h2
           ref={heading3Ref}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading dark:text-light-heading md:text-3xl xl:text-4xl xl:leading-tight font-roboto font-light"
         >
           {tagline}
         </h2>
@@ -77,7 +77,7 @@ function Home() {
       <div className="mt-5 md:mt-0 md:order-last">
         <img
           ref={imageRef}
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mr-16"
+          className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mr-8"
           src={img}
           alt="Profile"
         />
